@@ -1,11 +1,6 @@
 ﻿/**
- * die übergeordneten Steuerungsfunktionen.
- * Version 12: Konsolidiert, entfernt redundante Hilfsfunktionen.
- * Fügt eine Funktion zum Erstellen einer Sicherheitskopie der gesamten Tabelle hinzu.
- * Fügt eine Funktion zum automatischen Anordnen der Blätter hinzu.
- * Verschiebt "Blätter anordnen" direkt ins Hauptmenü.
- * Automatisiert die Blattsortierung nach dem Anlegen der zukünftigen Blätter.
- * Automatisiert die Erstellung von Sicherheitskopien am 1. und 10. jedes Monats.
+ * Zentrale Steuerungsfunktionen für den Dienstplan.
+ * Hinweise zur geplanten Aufteilung und Teststrategie: siehe docs/REFAKTORIERUNG.md.
  */
 
 // Globale Konstanten für die Blattnamen und Konfigurationen
