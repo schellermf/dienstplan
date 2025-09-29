@@ -11,5 +11,10 @@
 ## Tests und Validierung
 - Dokumentiere im Pull-Request alle manuell ausgeführten Tests oder Skripte. Falls keine Tests existieren, erkläre kurz, wie du die Funktionalität geprüft hast.
 
+## Architektur-Notizen
+- Vorschläge zur Aufteilung und Teststrategie für `dienstbeta.gs` stehen in `docs/REFAKTORIERUNG.md`. Bitte dortige Hinweise prüfen, bevor umfangreiche Änderungen am Dienstplan-Algorithmus erfolgen.
+- Bei Arbeiten an Google-Apps-Script-Dateien bevorzugt mehrere kleinere `.gs`-Dateien gemäß der empfohlenen Struktur anlegen, damit Menüs, Blattverwaltung und Planungslogik getrennt bleiben.
+- Extrahiere neue, reine Hilfsfunktionen nach Möglichkeit in Utility-Dateien, um sie mit Node-basierten Tests abdecken zu können (z.B. via `jest` oder `vitest` in Verbindung mit `gas-local`).
+
 ## PR-Beschreibung
 - Die PR-Zusammenfassung soll zwei Abschnitte enthalten: "Änderungen" (Stichpunkte) und "Tests" (Stichpunkte mit den ausgeführten Befehlen oder "keine").
